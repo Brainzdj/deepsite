@@ -216,7 +216,7 @@ app.post("/api/ask-ai", async (req, res) => {
   try {
     const chatCompletion = client.chatCompletionStream({
       model: MODEL_ID,
-      provider: "hyperbolic",
+      provider: "fireworks-ai",
       messages: [
         {
           role: "system",
